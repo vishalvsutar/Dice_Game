@@ -6,7 +6,6 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.util.Log.INFO
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -81,7 +80,7 @@ class MainActivity : AppCompatActivity() {
         roll2EditText.visibility = View.GONE
         addRollVal(roll1EditText.text.toString().toInt())
         println(arrayList.joinToString(" ,"))
-        Log.i("vvs", arrayList.joinToString(" ,"))
+     //   Log.i("vvs", arrayList.joinToString(" ,")) // for testing
         historytextview.text = arrayList.joinToString(", ")
     }
 
@@ -238,7 +237,7 @@ class MainActivity : AppCompatActivity() {
             R.id.menu_about -> {
                 Toast.makeText(
                     applicationContext,
-                    "this is a final exam app by vishal",
+                    "This is a Final Exam Apk\n\t   MADE BY VISHAL",
                     Toast.LENGTH_SHORT
                 ).show()
             }
